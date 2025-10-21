@@ -192,7 +192,7 @@ export default function EnVieDeFermePage() {
             <video
               className="w-full h-full object-cover"
               controls
-              poster="https://accueilpedagogiquealaferme.fr/cache/bf_imageDSC_0004_(Copier)_vignette_1600_1200.JPG"
+              poster="https://youtu.be/zBwWMxB7-6w?si=XTBtuMZYa0nFKTI0"
             >
               <source src="/videos/en-vie-de-ferme.mp4" type="video/mp4" />
               Votre navigateur ne supporte pas la lecture vidéo.

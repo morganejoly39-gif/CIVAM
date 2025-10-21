@@ -113,7 +113,7 @@ export default function DeFermeEnFermePage() {
             <video
               className="w-full h-full object-cover"
               controls
-              poster="https://www.ladrome.fr/wp-content/uploads/2025/04/bandeaudefermeenferme.webp"
+              poster="https://youtu.be/3I9AfSMKoYk?si=Ac5d7UtGn1rRuMyb"
             >
               <source src="/videos/de-ferme-en-ferme.mp4" type="video/mp4" />
               Votre navigateur ne supporte pas la lecture vidéo.

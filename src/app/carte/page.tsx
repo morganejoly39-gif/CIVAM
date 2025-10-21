@@ -126,7 +126,7 @@ const CATEGORY_COLORS: Record<string, string> = {
       description,
       coordonnees: coordTuple,
       categories,
-      note: note, // MODIFICATION 3
+      note,
     })
 
     setNom('')

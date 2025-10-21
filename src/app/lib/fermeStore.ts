@@ -8,7 +8,7 @@ export interface Ferme {
   description: string;
   coordonnees?: [number, number];
   categories: string[];
-  note?: string;
+  note: string;
 }
 
 interface FermeState {

@@ -169,37 +169,38 @@ export default function EnVieDeFermePage() {
 
        {/* VIDÉO DE CLÔTURE */}
        <section className="py-18 bg-[#ffffff]">
-        <div className="max-w-screen-lg mx-auto px-6 text-center space-y-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-        
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Plongez au cœur du projet “En vie de ferme” à travers cette vidéo qui met en lumière la passion des agriculteurs, leurs savoir-faire et les échanges vécus lors des visites pédagogiques.
-            </p>
-          </motion.div>
+  <div className="max-w-screen-lg mx-auto px-6 text-center space-y-8">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
+    >
+      <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+      Plongez au cœur du projet “En vie de ferme” à travers cette vidéo qui met en lumière la passion des agriculteurs, leurs savoir-faire et les échanges vécus lors des visites pédagogiques. </p>
+    </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="relative overflow-hidden rounded-2xl shadow-xl max-w-4xl mx-auto"
-          >
-            <video
-              className="w-full h-full object-cover"
-              controls
-              poster="https://youtu.be/zBwWMxB7-6w?si=XTBtuMZYa0nFKTI0"
-            >
-              <source src="/videos/en-vie-de-ferme.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la lecture vidéo.
-            </video>
-          </motion.div>
-        </div>
-      </section>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="relative overflow-hidden rounded-2xl shadow-xl max-w-4xl mx-auto"
+    >
+      <div className="relative w-full pt-[56.25%]"> {/* Ratio 16:9 */}
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/zBwWMxB7-6w"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* CONTACT + DÉPLIANT */}
       <section className="py-18 px-6 bg-white">
